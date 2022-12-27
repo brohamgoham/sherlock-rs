@@ -1,0 +1,20 @@
+[package]
+name = "sherlock-rs"
+version = "0.1.10"
+edition = "2023"
+authors = ["mohammed-maali <mohamgoham@gmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "Rust based JSON-RPC Client"
+readme = "README.md"
+homepage = "https://github.com/brohamgoham/sherlock-rs"
+repository = "https://github.com/brohamgoham/sherlock-rs"
+keywords = ["web3", "polygon", "rpc", "api"]
+categories = ["api-bindings", "cryptography::cryptocurrencies"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+anyhow = "1.0.56"
+serde_json = "1.0.79"
+serde = { version = "1.0.136", features = ["derive"] }
