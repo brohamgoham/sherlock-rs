@@ -1,7 +1,6 @@
 [package]
 name = "sherlock-rs"
 version = "0.1.10"
-edition = "2023"
 authors = ["mohammed-maali <mohamgoham@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Rust based JSON-RPC Client"

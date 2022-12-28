@@ -666,6 +666,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "sherlock-rs"
+version = "0.1.10"
+dependencies = [
+ "anyhow",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "signal-hook-registry"
 version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -964,17 +975,6 @@ checksum = "7b17e741662c70c8bd24ac5c5b18de314a2c26c32bf8346ee1e6f53de919c283"
 dependencies = [
  "js-sys",
  "wasm-bindgen",
-]
-
-[[package]]
-name = "web3-rpc"
-version = "0.1.10"
-dependencies = [
- "anyhow",
- "reqwest",
- "serde",
- "serde_json",
- "tokio",
 ]
 
 [[package]]
