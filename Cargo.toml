@@ -9,7 +9,7 @@ homepage = "https://github.com/brohamgoham/sherlock-rs"
 repository = "https://github.com/brohamgoham/sherlock-rs"
 keywords = ["web3", "polygon", "rpc", "api"]
 categories = ["api-bindings", "cryptography::cryptocurrencies"]
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 
 [dependencies]
 reqwest = { version = "0.11", features = ["json"] }
