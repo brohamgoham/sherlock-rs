@@ -21,37 +21,7 @@ async fn main() -> anyhow::Result<()> {
     let r = rpc.net_version().await?;
     println!("test3");
     println!("{:?}", r);
-
-   // let r = rpc.net_listening().await?;
-  //  println!("test4");
-    //println!("{:?}", r);
-
-  //  let r = rpc.net_peer_count().await?;
-  //  println!("test5");
-
-    //println!("{:?}", r);
-
-  //  let r = rpc.eth_protocol_version().await?;
-  //  println!("{:?}", r);
-
-  //  let r = rpc.eth_syncing().await?;
-    //println!("{:?}", r);
-
-   // let r = rpc.eth_coinbase().await?;
-   // println!("{:?}", r);
-
- //   let r = rpc.eth_mining().await?;
- //   println!("{:?}", r);
-
- //   let r = rpc.eth_hashrate().await?;
-  //  println!("{:?}", r);
-
-  //  let r = rpc.eth_gas_price().await?;
-  //  println!("{:?}", r);
-
- //   let r = rpc.eth_accounts().await?;
- //   println!("{:?}", r);
-
+    
     let r = rpc
         .eth_get_balance(
             "0x846c4dc9f4e2514206ef179eaa0bcfae007e37d2",
