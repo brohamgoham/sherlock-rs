@@ -413,16 +413,16 @@ impl Web3 {
 
 #[cfg(test)]
 mod tests {
+    const BLAST_BASE_URL: &str = "https://blast-mainnet.g.alchemy.com/v2/xxx";
+
     use super::*;
 
     #[tokio::test]
     pub async fn get_block_transaction_count_by_hash() {
-        let rpc = Web3::new("https://mainnet.infura.io/v3/xxx".to_string());
+        let rpc = Web3::new(BLAST_BASE_URL.to_string());
         let r = rpc
-            .eth_get_block_transaction_count_by_hash(
-                "0xe812a49745d691961893d7cfd3902d78d710751bab872f12215ee23f27f3efa9",
-            )
-            .await;
+            .eth_get_block_by_number(
+            "0x2392", true).await.unwrap();
         println!("{:?}", r);
     }
 }

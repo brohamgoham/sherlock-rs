@@ -1,6 +1,7 @@
 [package]
 name = "sherlock-rs"
 version = "0.1.10"
+edition = "2021"
 authors = ["mohammed-maali <mohamgoham@gmail.com>"]
 license = "MIT OR Apache-2.0"
 description = "Rust based JSON-RPC Client"
@@ -17,3 +18,4 @@ tokio = { version = "1", features = ["full"] }
 anyhow = "1.0.56"
 serde_json = "1.0.79"
 serde = { version = "1.0.136", features = ["derive"] }
+dotenv = "0.15.0"
