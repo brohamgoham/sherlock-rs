@@ -28,6 +28,13 @@ impl Client {
         self.handler(response).await
     }
 
+    async fn mapper() -> anyhow::Result<Vec<i32>> {
+        let data = vec![99, 232, 11, 230, 12];
+
+        let veccer: Vec<i32> = data.iter().map(|x| x * 2).collect();
+        println!("test: {:?}", veccer);
+        Ok(veccer)
+    }
     async fn handler(&self, response: Response) -> anyhow::Result<String> {
         match response.status() {
             StatusCode::OK => {

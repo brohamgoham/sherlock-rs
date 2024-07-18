@@ -30,10 +30,6 @@ async fn main() -> anyhow::Result<()> {
         .await?;
     println!("going to get balance {:?}", r);
 
-    let r = rpc
-        .eth_get_storage_at("0x295a70b2de5e3953354a6a8344e616ed314d7251", "0x0", None)
-        .await?;
-    println!("getting storage {:?}", r);
 
     let r = rpc
         .eth_get_transaction_count("0x846c4dc9f4e2514206ef179eaa0bcfae007e37d2", None)

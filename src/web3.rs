@@ -423,6 +423,7 @@ mod tests {
         let r = rpc
             .eth_get_block_by_number(
             "0x2392", true).await.unwrap();
-        println!("{:?}", r);
     }
+
+
 }
